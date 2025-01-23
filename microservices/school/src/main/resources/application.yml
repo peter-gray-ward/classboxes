@@ -3,3 +3,8 @@ spring:
     name: school
   config:
     import: optional:configserver:http://localhost:8888
+
+logging:
+  level:
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE

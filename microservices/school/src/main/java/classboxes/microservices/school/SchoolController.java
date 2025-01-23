@@ -16,6 +16,7 @@ public class SchoolController {
 	@PostMapping
 	@ResponseStatus(HttpStatus.CREATED)
 	public void save(@RequestBody School school) {
+		System.out.println("[time] - - - Getting a Request");
 		service.save(school);
 	}
 

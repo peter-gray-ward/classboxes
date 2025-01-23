@@ -12,9 +12,4 @@ public class SchoolApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SchoolApplication.class, args);
 	}
-
-	@EventListener(SchoolApplication.class)
-    public void onApplicationReady() {
-        System.out.println("Application context is ready. Post-init logic here.");
-    }
 }

@@ -12,6 +12,7 @@ public class SchoolService {
 	public final StudentClient client;
 
 	public void save(School school) {
+		System.out.println("[time] - - - Repository is saving a school.");
 		repository.save(school);
 	}
 
